@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Straight to Recipe",
+  "description": "This extension removes all content on a recipe website except for the recipe.",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+#activateButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#recipeContainer {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    overflow: auto;
+    height: 400px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
